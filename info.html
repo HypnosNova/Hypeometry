@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/info.css" />
+	</head>
+
+	<body>
+		<img src="img/border.png" class="border" />
+		<div class="chapter"></div>
+		<div class="name"></div>
+
+		<img src="img/border.png" class="border2" />
+	</body>
+	<script src="js/data/maps.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/lib/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/util.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		
+		var urlData=new UrlData();
+		$(".chapter").text(decodeURI(urlData.chapter));
+		$(".name").text(decodeURI(urlData.name));
+		
+		$(function(){
+			var thisFrame = window.parent.document.getElementsByTagName("iframe");
+			setTimeout(function() {
+				$(thisFrame).fadeOut(1500,function(){
+					$(thisFrame).remove();
+				});
+			}, 2000)
+		});
+	
+//		$(".nextLevel").bind("click", function() {
+//			//			window.parent.document.getElementsByTagName("button")[0].click();
+//			//window.parent.window.aaa();
+//			window.parent.window.isClearWorld = true;
+//			window.parent.window.hideIframe("fadeOut")
+//			setTimeout(function() {
+//				window.parent.window.createWorld(map1);
+//			}, 1000)
+//		})
+//		$(".levelsLevel").bind("click", function() {
+//			var thisFrame = window.parent.document.getElementsByTagName("iframe")[0];
+//			window.parent.window.hideIframe("fadeOut");
+//			var iframe = window.parent.document.createElement("iframe");
+//			$(iframe).addClass("levelDiv").attr("src", "levels.html").show().animateCss("fadeIn");
+//			window.parent.document.body.appendChild(iframe);
+//			setTimeout(function() {
+//				$(thisFrame).remove();
+//			}, 1000)
+//		})
+	</script>
+
+</html>

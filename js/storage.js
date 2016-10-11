@@ -1,0 +1,1 @@
+localStorage.mapIndex = 0;

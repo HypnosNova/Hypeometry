@@ -1,0 +1,38 @@
+{
+	"index.html": {
+		"resources": [
+			"js/lib/stats.min.js",
+			"js/lib/three.min.js",
+			"js/scene.js",
+			"js/data/maps.js",
+			"css/main.css",
+			"js/control.js",
+			"js/lib/jquery-2.1.0.js",
+			"img/leftBtn.png",
+			"img/rightBtn.png",
+			"js/pathSearch.js",
+			"js/util.js",
+			"css/animate.min.css",
+			"js/main.js",
+			"levels.html",
+			"js/lib/TrackballControls.js",
+			"js/lib/three.min2.js",
+			"js/lib/CSS3DRenderer.js",
+			"js/lib/tween.min.js",
+			"css/level.css",
+			"js/levelMenu.js",
+			"img/icon_xyb.png",
+			"img/icon_tz.png",
+			"img/border.png",
+			"scoreboard.html",
+			"img/icon_levels.png",
+			"css/score.css",
+			"css/info.css",
+			"info.html",
+			"js/storage.js",
+			"css/halo.css",
+			"img/texture/1.jpg",
+			"img/texture/2.jpg"
+		]
+	}
+}
