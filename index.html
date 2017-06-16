@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>three.js canvas - camera - orthographic</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/halo.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+
+	<body scroll="no">
+		<div id="world"></div>
+	</body>
+	<script src="js/lib/jquery-2.1.0.js"></script>
+	<script src="js/util.js"></script>
+	<script src="js/data/maps.js"></script>
+	<script src="js/lib/three.min.js"></script>
+	<script src="js/lib/stats.min.js"></script>
+	<script src="js/pathSearch.js"></script>
+	<script src="js/scene.js"></script>
+	<script src="js/control.js"></script>
+	<script src="js/storage.js"></script>
+	<script>
+		$(function() {
+			createWorld(MAPS[parseInt(localStorage.mapIndex)]);
+		})
+	</script>
+
+</html>
