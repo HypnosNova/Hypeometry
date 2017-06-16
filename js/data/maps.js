@@ -1,6 +1,7 @@
 var MAP_INDEX = 0;
 
 var UI = {
+	mapScale:2.2,
 	building: [
 		//梦的两横
 		[5.5, 0.5, 0.5, 6, 8, 5],
@@ -87,7 +88,7 @@ var UI = {
 
 var map1 = {
 	cameraLook:{x:0,y:0,z:0},
-	mapScale:2.2,
+	mapScale:3.2,
 	hasRotateBtn: false,
 	urlData: "chapter=第一章&name=惊奇",
 	box: [
@@ -134,7 +135,7 @@ var map1 = {
 	startPoint: [0.4, 0, 0, 2],
 	endPoint: [0.4, 6, 3, 0],
 	map45: [],
-	boxColor: 0xff00ff,
+	boxColor: 0xff8800,
 	colN: 40,
 	rowN: 40,
 	gameNewSetting:function(theWindow, theDocument){
@@ -288,7 +289,7 @@ var map1 = {
 }
 
 var map2 = {
-	mapScale:2.2,
+	mapScale:3.2,
 	cameraLook:{x:0,y:0,z:0},
 	hasRotateBtn: false,
 	urlData: "chapter=第二章&name=迷失",
@@ -557,7 +558,7 @@ var map2 = {
 }
 
 var map3 = {
-	mapScale:2.2,
+	mapScale:3.2,
 	hasRotateBtn: true,
 	urlData: "chapter=第三章&name=悬浮体",
 	box: [

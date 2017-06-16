@@ -109,7 +109,8 @@ function startGame(map) {
 }
 
 function init(scaleC) {
-	var scale = scaleC || 2.2
+	var scale = scaleC || 2.2;
+	console.log(scale)
 	container = document.createElement('div');
 	document.getElementById("world").appendChild(container);
 
